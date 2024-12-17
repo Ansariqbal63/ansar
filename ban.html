@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Banner with Content</title>
+        <style>
+          body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+          }
+          .banner {
+            position: relative;
+            background-image: url(p3.jpg); /* Replace with your image URL */
+            background-size: cover;
+            background-position: center;
+            height: 500px;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+          }
+          .content {
+            background-color: rgba(
+              0,
+              0,
+              0,
+              0.5
+            ); /* Transparent black overlay */
+            padding: 20px;
+            border-radius: 10px;
+          }
+          .content h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+          }
+          .content p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+          }
+          .content button {
+            background-color: #ff5722;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+          }
+          .content button:hover {
+            background-color: #e64a19;
+          }
+        </style>
+      </head>
+      <body>
+        <div class="banner">
+          <div class="content">
+            <h1>Welcome to Our Site</h1>
+            <p>
+              Your one-stop destination for amazing content and experiences.
+            </p>
+            <button onclick="alert('Button Clicked!')">Learn More</button>
+          </div>
+        </div>
+      </body>
+    </html>
+  </body>
+</html>

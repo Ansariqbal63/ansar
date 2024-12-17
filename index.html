@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap CSS CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <!-- Font link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Optional: Font Awesome CDN for icons -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        background-color: rgb(228, 233, 239);
+        font-family: "Merriweather", sans-serif;
+      }
+
+      /* Custom styling for the search input and button */
+      .search-input {
+        border: 2px solid red;
+        border-right: none;
+        border-radius: 4px 0 0 4px;
+      }
+
+      .search-button {
+        border: 2px solid red;
+        border-left: none;
+        border-radius: 0 4px 4px 0;
+        background-color: red;
+        color: white;
+      }
+
+      .search-button:hover {
+        background-color: darkblue;
+      }
+
+      .pic img {
+        max-width: 100%;
+        height: auto;
+      }
+
+      h1 {
+        font-family: "Merriweather", sans-serif;
+        font-weight: bold;
+        color: black;
+        font-size: 4rem; /* Responsive font size */
+        text-shadow: -1px 1px 1px black;
+        margin-left: 10px;
+      }
+
+      h1 span {
+        color: red;
+      }
+
+      .para {
+        position: relative;
+        right: 130px;
+      }
+
+      .small {
+        text-align: left;
+        position: relative;
+        left: 165px;
+        bottom: 20px;
+        font-size: 12px;
+      }
+
+      img {
+        text-align: center;
+        position: relative;
+        left: 25px;
+      }
+
+      /* Make h1 font size responsive */
+      @media (max-width: 1200px) {
+        h1 {
+          font-size: 3rem;
+        }
+      }
+
+      @media (max-width: 992px) {
+        h1 {
+          font-size: 2.5rem;
+        }
+      }
+
+      @media (max-width: 768px) {
+        h1 {
+          font-size: 2rem;
+        }
+
+        .small {
+          font-size: 10px;
+        }
+      }
+
+      @media (max-width: 576px) {
+        h1 {
+          font-size: 1.5rem;
+        }
+
+        .para {
+          right: 0;
+        }
+
+        .small {
+          left: 0;
+        }
+      }
+
+      .navbar {
+        background-color: rgb(228, 233, 239);
+      }
+
+      .nav {
+        margin-bottom: 100px;
+      }
+    </style>
+    <title>Responsive Page</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div class="nav">
+      <nav class="navbar">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="logo.png" alt="Logo" width="200" class="img-fluid" />
+          </a>
+        </div>
+      </nav>
+
+      <!-- Main Content -->
+      <div class="container my-5">
+        <div class="row justify-content-center text-center">
+          <div class="col-lg-8 col-md-10 col-sm-12">
+            <h1>
+              Where <span class="text-danger">Bargain Hunters</span><br />
+              Get Their Daily Deal
+            </h1>
+            <p>
+              The latest deals—straight to your inbox for
+              <span class="fw-bold">FREE!</span>
+            </p>
+            <p class="para">See you there!✌️✌🏽</p>
+
+            <!-- Subscription Form -->
+            <form class="d-flex justify-content-center mb-4">
+              <div class="input-group" style="max-width: 400px">
+                <input
+                  type="text"
+                  class="form-control search-input"
+                  placeholder="Enter Your mobile number..."
+                  aria-label="Enter Your mobile number"
+                />
+                <button type="button" class="btn search-button">
+                  Subscribe
+                </button>
+              </div>
+            </form>
+
+            <!-- Disclaimer Text -->
+            <p class="small">
+              By signing up via text, you agree to receive recurring automated
+              marketing messages <br />
+              and shopping cart reminders at the phone number provided. Consent
+              is not a condition of purchase.<br />
+              Reply STOP to unsubscribe. HELP for help. Msg frequency varies.
+              Msg & Data rates may apply. View
+              <span><a href="#">Privacy Policy</a> & <a href="#">ToS</a></span>
+            </p>
+
+            <!-- Exclusive Offer Section -->
+            <div class="">
+              <div class="pic">
+                <h4>Exclusive Offer From Oh Coupon</h4>
+                <img src="2.png" alt="Offer Image" class="d-block mx-auto" />
+                <p class="mt-3">
+                  <a href="#" class="text-dark">Privacy Policy</a>
+                  <span class="mx-1">|</span>
+                  <a href="#" class="text-dark">Terms of Service</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- jQuery CDN (Optional) -->
+      <script
+        src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIKb4uCkEWRJkMQ3CH9k1H2pV9Pj3XX7+INgFkm/gb8yAzjYd+7XG"
+        crossorigin="anonymous"
+      ></script>
+      <!-- Bootstrap JS CDN -->
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"
+      ></script>
+    </div>
+  </body>
+</html>
